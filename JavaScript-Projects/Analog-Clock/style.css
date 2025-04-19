@@ -1,0 +1,60 @@
+#clockContainer{
+    /* border: 1.5px solid red; */
+    position: relative;
+    margin:auto;
+    height: 60vh;
+    width: 60vw;
+    background: url(clock.jpg) no-repeat center center;
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+    /* transform: rotate(90deg); */
+}
+
+#hour{
+    width: 0.6%;
+    height: 22%;
+    top: 28%;
+    left: 49.70%;
+    /* display: none; */
+}
+
+#minute{
+    width: 0.5%;
+    height: 24%;
+    top: 26%;
+    left: 49.75%;
+    /* display: none; */
+}
+
+#second{
+    width: 0.2%;
+    height: 28%;
+    top: 22%;
+    left: 49.85%;
+    /* display: none; */
+}
+
+#name{
+    position: absolute;
+    top: 90%;
+    left:85%;
+    font-family: 'PoetsenOne';
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+@media (max-width: 600px) {
+    #clockContainer {
+        width: 90vw;
+        height: 90vw; /* Keep it square and readable */
+    }
+
+    #name {
+        font-size: 4vw; /* Keep font readable on smaller screens */
+    }
+}
